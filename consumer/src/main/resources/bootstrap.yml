@@ -1,0 +1,57 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: consumer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      username: huangqiqun@126.com
+      password: hqq19830919
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: consumer
+    # Eureka config for discovery
+    metadata-map:
+      version: 1.0
+      group: haiercash-service-group
+      region: dev
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
+
+logging:
+  level:
+    com.haiercash.consumer.MFeignClient: debug
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 15000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+
+#新版配置，否则后面dashboard无法找到hystrix.stream
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

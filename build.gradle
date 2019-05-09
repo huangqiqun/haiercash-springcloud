@@ -1,0 +1,69 @@
+group 'com.haiercash'
+version = '0.0.1-SNAPSHOT'
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://oss.sonatype.org/content/groups/public/" }
+        maven { url "https://repo.spring.io/libs-milestone/" }
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "se.transmode.gradle:gradle-docker:${transmodeGradleDockerVersion}"
+    }
+}
+allprojects {
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://oss.sonatype.org/content/groups/public/" }
+        maven { url "https://repo.spring.io/libs-milestone/" }
+        jcenter()
+        mavenCentral()
+    }
+    //指定编码格式
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
+
+//设定当前模块项目中的配置
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'docker'
+    apply plugin: 'application'
+    //spring boot 插件
+    apply plugin: 'org.springframework.boot'
+    //A Gradle plugin that provides Maven-like dependency management functionality
+    apply plugin: 'io.spring.dependency-management'
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    }
+    dependencyManagement {
+        imports {
+            //spring bom helps us to declare dependencies without specifying version numbers.
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "com.nepxion:discovery:4.8.5.2"
+        }
+    }
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
+    task dockerBuilder(type: Docker) {
+        applicationName = jar.baseName
+        tagVersion = jar.version
+        dockerfile = file('Dockerfile')
+        doFirst {
+            copy {
+                from jar
+                into stageDir
+            }
+        }
+    }
+}

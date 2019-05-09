@@ -1,0 +1,45 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: provider
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: root
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      username: huangqiqun@126.com
+      password: hqq19830919
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: provider
+    # Eureka config for discovery
+    metadata-map:
+      version: 1.0
+      group: haiercash-service-group
+      region: dev
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
+
+management:
+  server:
+    port: 5100
+  endpoints:
+    web:
+      exposure:
+        include: '*'

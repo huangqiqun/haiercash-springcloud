@@ -1,0 +1,20 @@
+archivesBaseName = 'config-server'
+
+jar {
+    baseName = 'eureka-server'
+    version = '0.0.1-SNAPSHOT'
+    manifest {
+        attributes "Manifest-Version": 1.0, 'Main-Class': 'com.haiercash.configserver.ConfigServerApplication'
+    }
+}
+
+mainClassName = 'com.haiercash.configserver.ConfigServerApplication'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+}

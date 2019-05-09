@@ -1,0 +1,27 @@
+archivesBaseName = 'provider'
+
+jar {
+    baseName = 'provider'
+    version = '0.0.1-SNAPSHOT'
+    manifest {
+        attributes "Manifest-Version": 1.0, 'Main-Class': 'com.haiercash.provider.ProviderApplication'
+    }
+}
+
+mainClassName = 'com.haiercash.provider.ProviderApplication'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
+    implementation 'com.nepxion:discovery-plugin-starter-eureka'
+    implementation 'com.nepxion:discovery-plugin-config-center-starter-apollo'
+    /*implementation 'com.nepxion:discovery-plugin-config-center-starter-nacos'*/
+    implementation 'com.nepxion:discovery-plugin-strategy-starter-service'
+    implementation 'com.ctrip.framework.apollo:apollo-client:1.3.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
+}

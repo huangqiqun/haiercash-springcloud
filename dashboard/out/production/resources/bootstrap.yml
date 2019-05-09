@@ -1,0 +1,28 @@
+server:
+  port: 8900
+
+spring:
+  application:
+    name: dashboard
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: dashboard
+
+  client:
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: consumer
+  clusterNameExpression: "'default'"
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'

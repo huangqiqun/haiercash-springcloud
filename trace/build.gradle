@@ -1,0 +1,27 @@
+apply plugin: 'org.springframework.boot'
+
+archivesBaseName = 'trace'
+
+jar {
+    baseName = 'trace'
+    version = '0.0.1-SNAPSHOT'
+    manifest {
+        attributes "Manifest-Version": 1.0, 'Main-Class': 'com.haiercash.trace.TraceApplication'
+    }
+}
+
+mainClassName = 'com.haiercash.trace.TraceApplication'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'io.zipkin.java:zipkin-server:2.9.3'
+    implementation 'io.zipkin.java:zipkin-autoconfigure-ui:2.9.3'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+configurations {
+    compile.exclude module: 'log4j'
+    compile.exclude module: 'slf4j-log4j12'
+    compile.exclude module: 'spring-boot-starter-logging'
+}

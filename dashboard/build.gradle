@@ -1,0 +1,20 @@
+archivesBaseName = 'dashboard'
+
+jar {
+    baseName = 'dashboard'
+    version = '0.0.1-SNAPSHOT'
+    manifest {
+        attributes "Manifest-Version": 1.0, 'Main-Class': 'com.haiercash.dashboard.DashboardApplication'
+    }
+}
+
+mainClassName = 'com.haiercash.dashboard.DashboardApplication'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-turbine'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

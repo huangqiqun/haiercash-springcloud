@@ -1,0 +1,4 @@
+app：
+  id： discovery
+apollo：
+  meta： http://localhost:8080

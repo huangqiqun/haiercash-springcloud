@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: docker
+---
+server:
+  port: 8800
+
+spring:
+  profiles: docker
+  application:
+    name: config-server
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: root
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huangqiqun/springcloudconfig
+          search-paths: config-repo
+          username: huangqiqun@126.com
+          password: hqq19830919
+        label: master
+
+eureka:
+  instance:
+    hostname: eureka-server
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: config-server
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8761/eureka/

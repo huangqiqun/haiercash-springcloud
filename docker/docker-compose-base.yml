@@ -1,0 +1,38 @@
+version: "2"
+services:
+  eureka-server:
+    container_name: eureka-server
+    image: microservice/eureka-server
+    ports:
+      - "8761:8761"
+    hostname: eureka-server
+
+  config-server:
+    container_name: config-server
+    image: haiercash-springcloud/config-server:latest
+    ports:
+      - "1121:1121"
+    hostname: config-server
+
+  gateway:
+    container_name: gateway
+    image: haiercash-springcloud/gateway:latest
+    ports:
+      - "1115:1115"
+    hostname: gateway
+    links:
+      - "eureka-server"
+
+  trace:
+    container_name: trace
+    image: haiercash-springcloud/sleuth:latest
+    ports:
+      - "1116:1116"
+    hostname: trace
+
+  dashboard:
+    container_name: dashboard
+    image: haiercash-springcloud/sleuth:latest
+    ports:
+      - "1116:1116"
+    hostname: trace

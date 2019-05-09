@@ -1,0 +1,17 @@
+version: "2"
+services:
+  provider:
+    image: microservice/provider
+    ports:
+      - "1113:1113"
+    external_links:
+      - "config-server"
+      - "eureka-server:peer1"
+
+  consumer:
+    image: microservice/consumer
+    ports:
+      - "1114:1114"
+    external_links:
+      - "eureka-server:peer1"
+      - "provider"

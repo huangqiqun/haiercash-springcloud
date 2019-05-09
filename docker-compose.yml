@@ -1,0 +1,140 @@
+version: '3'
+services:
+  #服务注册发现
+  peer1:
+    hostname: peer1
+    container_name: peer1
+    build: eureka-server/
+    image: microservice/eureka-server:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8761:8761
+    environment:
+      - spring.profiles.active=peer1
+  peer2:
+    hostname: peer2
+    container_name: peer2
+    build: eureka-server/
+    image: microservice/eureka-server:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8762:8762
+    environment:
+      - spring.profiles.active=peer2
+  peer3:
+    hostname: peer3
+    container_name: peer3
+    build: eureka-server/
+    image: microservice/eureka-server:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8763:8763
+    environment:
+      - spring.profiles.active=peer3
+
+  #配置中心
+  config-server:
+    hostname: config-server
+    container_name: config-server
+    build: config-server/
+    image: microservice/config-server:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8800:8800
+    depends_on:
+      - peer1
+      - peer2
+      - peer3
+  #微服务
+  proivder:
+    hostname: provider
+    container_name: provider
+    build: provider/
+    image: microservice/provider:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8100:8100
+    depends_on:
+      - peer1
+      - peer2
+      - peer3
+      - config-server
+
+  consumer:
+    hostname: consumer
+    container_name: consumer
+    build: consumer/
+    image: microservice/consumer:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8200:8200
+    depends_on:
+      - peer1
+      - peer2
+      - peer3
+      - config-server
+      - proivder
+
+  #网关
+  gateway:
+    hostname: gateway
+    container_name: gateway
+    build: gateway/
+    image: microservice/gateway:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8400:8400
+    depends_on:
+      - peer1
+      - peer2
+      - peer3
+      - config-server
+      - proivder
+      - consumer
+
+  dashboard:
+    hostname: dashboard
+    container_name: dashboard
+    build: dashboard/
+    image: microservice/dashboard:latest
+    networks:
+      - microservice-net
+    ports:
+      - 8900:8900
+    depends_on:
+      - peer1
+      - peer2
+      - peer3
+      - config-server
+      - proivder
+      - consumer
+      - gateway
+
+#  trace:
+#    hostname: trace
+#    container_name: trace
+#    build: trace/
+#    image: microservice/trace:latest
+#    networks:
+#      - microservice-net
+#    ports:
+#      - 9411:9411
+#    depends_on:
+#      - peer1
+#      - peer2
+#      - peer3
+#      - config-server
+#      - proivder
+#      - consumer
+#      - gateway
+
+networks:
+  microservice-net:
+    driver: bridge
