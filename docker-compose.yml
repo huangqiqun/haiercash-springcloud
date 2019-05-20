@@ -7,7 +7,7 @@ services:
     build: eureka-server/
     image: microservice/eureka-server:latest
     networks:
-      - microservice-net
+      - microservice-network
     ports:
       - 8761:8761
     environment:
@@ -18,7 +18,7 @@ services:
     build: eureka-server/
     image: microservice/eureka-server:latest
     networks:
-      - microservice-net
+      - microservice-network
     ports:
       - 8762:8762
     environment:
@@ -29,7 +29,7 @@ services:
     build: eureka-server/
     image: microservice/eureka-server:latest
     networks:
-      - microservice-net
+      - microservice-network
     ports:
       - 8763:8763
     environment:
@@ -42,7 +42,7 @@ services:
     build: config-server/
     image: microservice/config-server:latest
     networks:
-      - microservice-net
+      - microservice-network
     ports:
       - 8800:8800
     depends_on:
@@ -56,7 +56,8 @@ services:
     build: provider/
     image: microservice/provider:latest
     networks:
-      - microservice-net
+      - microservice-network
+      - apollo-network
     ports:
       - 8100:8100
     depends_on:
@@ -71,7 +72,8 @@ services:
     build: consumer/
     image: microservice/consumer:latest
     networks:
-      - microservice-net
+      - microservice-network
+      - apollo-network
     ports:
       - 8200:8200
     depends_on:
@@ -88,7 +90,8 @@ services:
     build: gateway/
     image: microservice/gateway:latest
     networks:
-      - microservice-net
+      - microservice-network
+      - apollo-network
     ports:
       - 8400:8400
     depends_on:
@@ -105,7 +108,7 @@ services:
     build: dashboard/
     image: microservice/dashboard:latest
     networks:
-      - microservice-net
+      - microservice-network
     ports:
       - 8900:8900
     depends_on:
@@ -123,7 +126,7 @@ services:
 #    build: trace/
 #    image: microservice/trace:latest
 #    networks:
-#      - microservice-net
+#      - microservice-network
 #    ports:
 #      - 9411:9411
 #    depends_on:
@@ -136,5 +139,7 @@ services:
 #      - gateway
 
 networks:
-  microservice-net:
-    driver: bridge
+  microservice-network:
+    external: true
+  apollo-network:
+    external: true
