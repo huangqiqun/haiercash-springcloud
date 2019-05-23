@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.haiercash.console.ConsoleApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-23T05:57:45" hostname="huangqiqun-ThinkPad-T470p" time="0.214">
+  <properties/>
+  <testcase name="contextLoads" classname="com.haiercash.console.ConsoleApplicationTests" time="0.214"/>
+  <system-out><![CDATA[discovery 2019-05-23 13:57:40,588 INFO [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.haiercash.console.ConsoleApplicationTests], using SpringBootContextLoader
+discovery 2019-05-23 13:57:40,595 INFO [Test worker] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] - Could not detect default resource locations for test class [com.haiercash.console.ConsoleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+discovery 2019-05-23 13:57:40,597 INFO [Test worker] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] - Could not detect default configuration classes for test class [com.haiercash.console.ConsoleApplicationTests]: ConsoleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+discovery 2019-05-23 13:57:40,704 INFO [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:247] - Found @SpringBootConfiguration com.haiercash.console.ConsoleApplication for test class com.haiercash.console.ConsoleApplicationTests
+discovery 2019-05-23 13:57:40,882 INFO [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+discovery 2019-05-23 13:57:40,890 INFO [Test worker] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75866203, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@510b7fa0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5ef463f7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@19e7d5fa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f372abf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55cbb886, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@285d9213, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fb2cae7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69b67b7c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6131f144]
+discovery 2019-05-23 13:57:41,222 INFO [Test worker] o.s.c.a.AnnotationConfigApplicationContext [AbstractApplicationContext.java:588] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b6a64dd: startup date [Thu May 23 13:57:41 CST 2019]; root of context hierarchy
+discovery 2019-05-23 13:57:41,372 INFO [Test worker] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+discovery 2019-05-23 13:57:41,408 INFO [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:326] - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bb2395d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.7.RELEASE)
+
+discovery 2019-05-23 13:57:41,594 INFO [Test worker] c.h.c.ConsoleApplicationTests [SpringApplication.java:654] - No active profile set, falling back to default profiles: default
+discovery 2019-05-23 13:57:41,598 INFO [Test worker] o.s.w.c.s.GenericWebApplicationContext [AbstractApplicationContext.java:588] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@61ebc5e7: startup date [Thu May 23 13:57:41 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b6a64dd
+
+╔═╗╔═╗   ╔╗
+║║╚╝║║  ╔╝╚╗
+║╔╗╔╗╠══╬╗╔╬═╦╦╗╔╗
+║║║║║║╔╗║║║║╔╬╬╬╬╝
+║║║║║║╔╗║║╚╣║║╠╬╬╗
+╚╝╚╝╚╩╝╚╝╚═╩╝╚╩╝╚╝
+Nepxion Matrix - Import Selector  v2.0.5
+
+
+╔═══╗
+╚╗╔╗║
+ ║║║╠╦══╦══╦══╦╗╔╦══╦═╦╗ ╔╗
+ ║║║╠╣══╣╔═╣╔╗║╚╝║║═╣╔╣║ ║║
+╔╝╚╝║╠══║╚═╣╚╝╠╗╔╣║═╣║║╚═╝║
+╚═══╩╩══╩══╩══╝╚╝╚══╩╝╚═╗╔╝
+                      ╔═╝║
+                      ╚══╝
+Nepxion Discovery - Eureka Plugin  v4.8.5.2
+
+
+╔═══╗        ╔╗╔══╗
+║╔══╝       ╔╝╚╣╔╗║
+║╚══╦╗╔╦══╦═╬╗╔╣╚╝╚╦╗╔╦══╗
+║╔══╣╚╝║║═╣╔╗╣║║╔═╗║║║║══╣
+║╚══╬╗╔╣║═╣║║║╚╣╚═╝║╚╝╠══║
+╚═══╝╚╝╚══╩╝╚╩═╩═══╩══╩══╝
+Nepxion EventBus  v2.0.10
+
+discovery 2019-05-23 13:57:42,727 INFO [Test worker] o.s.c.c.s.GenericScope [GenericScope.java:294] - BeanFactory id=ef2c7f04-13ea-371e-81c4-af655188d0ab
+discovery 2019-05-23 13:57:42,806 INFO [Test worker] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+discovery 2019-05-23 13:57:42,899 INFO [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:326] - Bean 'com.nepxion.eventbus.configuration.EventConfiguration' of type [com.nepxion.eventbus.configuration.EventConfiguration$$EnhancerBySpringCGLIB$$3766c29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 13:57:42,912 INFO [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:326] - Bean 'threadPoolFactory' of type [com.nepxion.eventbus.thread.ThreadPoolFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 13:57:42,913 INFO [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:326] - Bean 'eventControllerFactory' of type [com.nepxion.eventbus.core.EventControllerFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 13:57:42,920 INFO [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:326] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bb2395d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 13:57:43,362 WARN [Test worker] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+discovery 2019-05-23 13:57:43,362 INFO [Test worker] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+discovery 2019-05-23 13:57:43,377 INFO [Test worker] c.n.c.DynamicPropertyFactory [DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2866e02d
+discovery 2019-05-23 13:57:43,464 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+discovery 2019-05-23 13:57:43,465 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+discovery 2019-05-23 13:57:43,465 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+discovery 2019-05-23 13:57:43,469 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+discovery 2019-05-23 13:57:43,470 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+discovery 2019-05-23 13:57:43,477 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/config/view],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<java.lang.String>> com.nepxion.discovery.plugin.admincenter.endpoint.ConfigEndpoint.view()
+discovery 2019-05-23 13:57:43,477 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/config/update-sync],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.ConfigEndpoint.updateSync(java.lang.String)
+discovery 2019-05-23 13:57:43,478 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/config/clear-async],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.ConfigEndpoint.clearAsync()
+discovery 2019-05-23 13:57:43,479 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/config/clear-sync],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.ConfigEndpoint.clearSync()
+discovery 2019-05-23 13:57:43,479 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/config/update-async],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.ConfigEndpoint.updateAsync(java.lang.String)
+discovery 2019-05-23 13:57:43,482 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/version/view],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<java.lang.String>> com.nepxion.discovery.plugin.admincenter.endpoint.VersionEndpoint.view()
+discovery 2019-05-23 13:57:43,482 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/version/update-sync],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.VersionEndpoint.updateSync(java.lang.String)
+discovery 2019-05-23 13:57:43,483 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/version/clear-async],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.VersionEndpoint.clearAsync(java.lang.String)
+discovery 2019-05-23 13:57:43,484 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/version/clear-sync],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.VersionEndpoint.clearSync(java.lang.String)
+discovery 2019-05-23 13:57:43,484 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/version/update-async],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.nepxion.discovery.plugin.admincenter.endpoint.VersionEndpoint.updateAsync(java.lang.String)
+discovery 2019-05-23 13:57:43,488 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/route/{routeServiceId}/{routeHost}/{routePort}/{routeContextPath}],methods=[GET]}" onto public java.util.List<com.nepxion.discovery.common.entity.RouterEntity> com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.route(java.lang.String,java.lang.String,int,java.lang.String)
+discovery 2019-05-23 13:57:43,488 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/route/{routeServiceId}],methods=[GET]}" onto public java.util.List<com.nepxion.discovery.common.entity.RouterEntity> com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.route(java.lang.String)
+discovery 2019-05-23 13:57:43,489 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/routes],methods=[POST]}" onto public com.nepxion.discovery.common.entity.RouterEntity com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.routes(java.lang.String)
+discovery 2019-05-23 13:57:43,490 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/instances/{serviceId}],methods=[GET]}" onto public java.util.List<org.springframework.cloud.client.ServiceInstance> com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.instances(java.lang.String)
+discovery 2019-05-23 13:57:43,490 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/info],methods=[GET]}" onto public com.nepxion.discovery.common.entity.RouterEntity com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.info()
+discovery 2019-05-23 13:57:43,491 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:550] - Mapped "{[/router/services],methods=[GET]}" onto public java.util.List<java.lang.String> com.nepxion.discovery.plugin.admincenter.endpoint.RouterEndpoint.services()
+discovery 2019-05-23 13:57:43,723 WARN [Test worker] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+discovery 2019-05-23 13:57:43,723 INFO [Test worker] c.n.c.s.URLConfigurationSource [URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+discovery 2019-05-23 13:57:43,786 INFO [Test worker] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 13:57:43,926 INFO [Test worker] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:588] - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@61ebc5e7: startup date [Thu May 23 13:57:41 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b6a64dd
+discovery 2019-05-23 13:57:43,973 INFO [Test worker] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 13:57:43,973 INFO [Test worker] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 13:57:44,158 INFO [Test worker] c.n.e.t.ThreadPoolFactory [ThreadPoolFactory.java:114] - Thread pool executor is created, threadPoolName=EventBus-172.16.35.1-thread, threadParameter=com.nepxion.eventbus.thread.entity.ThreadParameter@21f78517[
+  threadPoolCorePoolSize=32
+  threadPoolMaximumPoolSize=64
+  threadPoolKeepAliveTime=900000
+  threadPoolAllowCoreThreadTimeout=false
+  threadPoolQueue=LinkedBlockingQueue
+  threadPoolQueueCapacity=8192
+  threadPoolRejectedPolicy=BlockingPolicyWithReport
+]
+discovery 2019-05-23 13:57:44,313 INFO [Test worker] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+discovery 2019-05-23 13:57:44,331 INFO [Test worker] c.n.d.p.c.i.ConfigInitializer [ConfigInitializer.java:59] - Rule starts to initialize...
+discovery 2019-05-23 13:57:44,332 INFO [Test worker] c.n.d.p.c.i.ConfigInitializer [ConfigInitializer.java:106] - Remote config loader isn't provided
+discovery 2019-05-23 13:57:44,332 INFO [Test worker] c.n.d.p.c.l.LocalConfigLoader [LocalConfigLoader.java:36] - Config local path is classpath:rule.xml
+discovery 2019-05-23 13:57:44,333 WARN [Test worker] c.n.d.p.c.l.LocalConfigLoader [LocalConfigLoader.java:45] - File [classpath:rule.xml] isn't found or invalid, ignore to load...
+discovery 2019-05-23 13:57:44,333 INFO [Test worker] c.n.d.p.c.i.ConfigInitializer [ConfigInitializer.java:126] - Local config isn't retrieved
+discovery 2019-05-23 13:57:44,333 INFO [Test worker] c.n.d.p.c.i.ConfigInitializer [ConfigInitializer.java:82] - No config is retrieved
+discovery 2019-05-23 13:57:45,037 WARN [Test worker] o.s.b.a.a.w.s.ManagementContextAutoConfiguration [ManagementContextAutoConfiguration.java:154] - Could not start embedded management container on different port (management endpoints are still available through JMX)
+discovery 2019-05-23 13:57:45,040 INFO [Test worker] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:356] - Starting beans in phase 0
+discovery 2019-05-23 13:57:45,050 INFO [Test worker] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:356] - Starting beans in phase 2147483647
+discovery 2019-05-23 13:57:45,050 INFO [Test worker] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:147] - Context refreshed
+discovery 2019-05-23 13:57:45,060 INFO [Test worker] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:150] - Found 1 custom documentation plugin(s)
+discovery 2019-05-23 13:57:45,088 INFO [Test worker] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] - Scanning for api listing references
+discovery 2019-05-23 13:57:45,239 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: routeUsingGET_1
+discovery 2019-05-23 13:57:45,253 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: clearAsyncUsingPOST_1
+discovery 2019-05-23 13:57:45,257 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: clearSyncUsingPOST_1
+discovery 2019-05-23 13:57:45,261 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: updateAsyncUsingPOST_1
+discovery 2019-05-23 13:57:45,265 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: updateSyncUsingPOST_1
+discovery 2019-05-23 13:57:45,268 INFO [Test worker] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] - Generating unique operation named: viewUsingGET_1
+discovery 2019-05-23 13:57:45,289 INFO [Test worker] c.h.c.ConsoleApplicationTests [StartupInfoLogger.java:59] - Started ConsoleApplicationTests in 4.375 seconds (JVM running for 5.417)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

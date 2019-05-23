@@ -10,6 +10,7 @@ spring:
     user:
       name: root
       password: root
+      roles: SUPERUSER
 
 eureka:
   datacenter: shanghai
@@ -18,14 +19,16 @@ eureka:
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 30
     lease-renewal-interval-in-seconds: 30
+    metadataMap:
+      - group： example-eureka-group
   server:
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 5000
+    #eviction-interval-timer-in-ms: 5000
   client:
-    healthcheck:
-      enabled: true
     register-with-eureka: false
     fetch-registry: false
+    healthcheck:
+      enabled: true
 ---
 server:
   port: 8761
@@ -51,7 +54,7 @@ eureka:
     hostname: peer1
   client:
     service-url:
-      defaultZone: http://root:root@peer2:8762/eureka/
+      defaultZone: http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
 ---
 server:
   port: 8762
@@ -64,4 +67,17 @@ eureka:
     hostname: peer2
   client:
     service-url:
-      defaultZone: http://root:root@peer1:8761/eureka/
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer3:8763/eureka/
+---
+server:
+  port: 8763
+
+spring:
+  profiles: peer3
+
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/

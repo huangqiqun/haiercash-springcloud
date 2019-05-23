@@ -49,6 +49,8 @@ subprojects {
         imports {
             //spring bom helps us to declare dependencies without specifying version numbers.
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "org.springframework.cloud:spring-cloud-alibaba-dependencies:0.2.2.RELEASE"
+            mavenBom "de.codecentric:spring-boot-admin-dependencies:2.0.5"
             mavenBom "com.nepxion:discovery:4.8.5.2"
         }
     }

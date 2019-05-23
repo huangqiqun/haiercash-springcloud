@@ -1,0 +1,157 @@
+discovery 2019-05-23 09:28:45,757 INFO [main] o.s.c.a.AnnotationConfigApplicationContext [?:?] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@36916eb0: startup date [Thu May 23 09:28:45 CST 2019]; root of context hierarchy
+discovery 2019-05-23 09:28:45,915 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [?:?] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+discovery 2019-05-23 09:28:45,943 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [?:?] - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$82b73832] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 09:28:46,079 INFO [main] c.h.e.EurekaServerApplication [?:?] - The following profiles are active: dev
+discovery 2019-05-23 09:28:46,088 INFO [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [?:?] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46dffdc3: startup date [Thu May 23 09:28:46 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36916eb0
+discovery 2019-05-23 09:28:46,733 INFO [main] o.s.c.c.s.GenericScope [?:?] - BeanFactory id=b101b6c3-c8b5-320d-9cac-6d2f5ebfd923
+discovery 2019-05-23 09:28:46,749 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [?:?] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+discovery 2019-05-23 09:28:46,821 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [?:?] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$82b73832] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+discovery 2019-05-23 09:28:47,037 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:91] - Tomcat initialized with port(s): 8761 (http)
+discovery 2019-05-23 09:28:47,045 INFO [main] o.a.c.h.Http11NioProtocol [?:?] - Initializing ProtocolHandler ["http-nio-8761"]
+discovery 2019-05-23 09:28:47,057 INFO [main] o.a.c.c.StandardService [?:?] - Starting service [Tomcat]
+discovery 2019-05-23 09:28:47,057 INFO [main] o.a.c.c.StandardEngine [?:?] - Starting Servlet Engine: Apache Tomcat/8.5.35
+discovery 2019-05-23 09:28:47,060 INFO [localhost-startStop-1] o.a.c.c.AprLifecycleListener [?:?] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+discovery 2019-05-23 09:28:47,120 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [?:?] - Initializing Spring embedded WebApplicationContext
+discovery 2019-05-23 09:28:47,120 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [?:?] - Root WebApplicationContext: initialization completed in 1032 ms
+discovery 2019-05-23 09:28:47,317 WARN [localhost-startStop-1] c.n.c.s.URLConfigurationSource [?:?] - No URLs will be polled as dynamic configuration sources.
+discovery 2019-05-23 09:28:47,318 INFO [localhost-startStop-1] c.n.c.s.URLConfigurationSource [?:?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+discovery 2019-05-23 09:28:47,325 INFO [localhost-startStop-1] c.n.c.DynamicPropertyFactory [?:?] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@ab54006
+discovery 2019-05-23 09:28:47,837 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [?:?] - Mapping filter: 'characterEncodingFilter' to: [/*]
+discovery 2019-05-23 09:28:47,837 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [?:?] - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+discovery 2019-05-23 09:28:47,837 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+discovery 2019-05-23 09:28:47,837 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [?:?] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+discovery 2019-05-23 09:28:47,838 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [?:?] - Mapping filter: 'requestContextFilter' to: [/*]
+discovery 2019-05-23 09:28:47,838 INFO [localhost-startStop-1] o.s.b.w.s.DelegatingFilterProxyRegistrationBean [?:?] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+discovery 2019-05-23 09:28:47,838 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:245] - Mapping filter: 'httpTraceFilter' to: [/*]
+discovery 2019-05-23 09:28:47,838 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [?:?] - Mapping filter: 'servletContainer' to urls: [/eureka/*]
+discovery 2019-05-23 09:28:47,839 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [?:?] - Servlet dispatcherServlet mapped to [/]
+discovery 2019-05-23 09:28:47,876 INFO [localhost-startStop-1] c.s.j.s.i.a.WebApplicationImpl [?:?] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+discovery 2019-05-23 09:28:47,916 INFO [localhost-startStop-1] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using JSON encoding codec LegacyJacksonJson
+discovery 2019-05-23 09:28:47,916 INFO [localhost-startStop-1] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using JSON decoding codec LegacyJacksonJson
+discovery 2019-05-23 09:28:47,982 INFO [localhost-startStop-1] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using XML encoding codec XStreamXml
+discovery 2019-05-23 09:28:47,982 INFO [localhost-startStop-1] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using XML decoding codec XStreamXml
+discovery 2019-05-23 09:28:48,370 INFO [main] o.s.s.w.DefaultSecurityFilterChain [?:?] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c441290, org.springframework.security.web.context.SecurityContextPersistenceFilter@44032fde, org.springframework.security.web.header.HeaderWriterFilter@480ad82c, org.springframework.security.web.csrf.CsrfFilter@4993febc, org.springframework.security.web.authentication.logout.LogoutFilter@5d8ab698, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30f74e79, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6fa13e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69923ac3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5578be42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12e5da86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c78e551, org.springframework.security.web.session.SessionManagementFilter@177515d1, org.springframework.security.web.access.ExceptionTranslationFilter@671c4166, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@feb98ef]
+discovery 2019-05-23 09:28:48,392 WARN [main] c.n.c.s.URLConfigurationSource [?:?] - No URLs will be polled as dynamic configuration sources.
+discovery 2019-05-23 09:28:48,392 INFO [main] c.n.c.s.URLConfigurationSource [?:?] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+discovery 2019-05-23 09:28:48,438 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [?:?] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 09:28:48,535 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [?:?] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46dffdc3: startup date [Thu May 23 09:28:46 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36916eb0
+discovery 2019-05-23 09:28:48,571 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [?:?] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+discovery 2019-05-23 09:28:48,572 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [?:?] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+discovery 2019-05-23 09:28:48,577 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [?:?] - Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+discovery 2019-05-23 09:28:48,578 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [?:?] - Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+discovery 2019-05-23 09:28:48,593 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [?:?] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 09:28:48,593 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [?:?] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+discovery 2019-05-23 09:28:48,839 INFO [main] o.s.u.f.SpringTemplateLoader [?:?] - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46dffdc3: startup date [Thu May 23 09:28:46 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36916eb0] and template loader path [classpath:/templates/]
+discovery 2019-05-23 09:28:48,840 INFO [main] o.s.w.s.v.f.FreeMarkerConfigurer [?:?] - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+discovery 2019-05-23 09:28:48,868 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [?:?] - Exposing 2 endpoint(s) beneath base path '/actuator'
+discovery 2019-05-23 09:28:48,876 INFO [main] o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping [?:?] - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+discovery 2019-05-23 09:28:48,877 INFO [main] o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping [?:?] - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+discovery 2019-05-23 09:28:48,878 INFO [main] o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping [?:?] - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+discovery 2019-05-23 09:28:48,994 INFO [main] o.s.c.n.e.InstanceInfoFactory [?:?] - Setting initial instance status as: STARTING
+discovery 2019-05-23 09:28:49,011 INFO [main] c.n.d.DiscoveryClient [?:?] - Initializing Eureka in region us-east-1
+discovery 2019-05-23 09:28:49,011 INFO [main] c.n.d.DiscoveryClient [?:?] - Client configured to neither register nor query for data.
+discovery 2019-05-23 09:28:49,015 INFO [main] c.n.d.DiscoveryClient [?:?] - Discovery Client initialized at timestamp 1558574929014 with initial instances count: 0
+discovery 2019-05-23 09:28:49,041 INFO [main] c.n.e.DefaultEurekaServerContext [?:?] - Initializing ...
+discovery 2019-05-23 09:28:49,043 INFO [main] c.n.e.c.PeerEurekaNodes [?:?] - Adding new peer nodes [http://root:root@localhost:8761/eureka/]
+discovery 2019-05-23 09:28:49,156 INFO [main] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using JSON encoding codec LegacyJacksonJson
+discovery 2019-05-23 09:28:49,157 INFO [main] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using JSON decoding codec LegacyJacksonJson
+discovery 2019-05-23 09:28:49,157 INFO [main] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using XML encoding codec XStreamXml
+discovery 2019-05-23 09:28:49,157 INFO [main] c.n.d.p.DiscoveryJerseyProvider [?:?] - Using XML decoding codec XStreamXml
+discovery 2019-05-23 09:28:49,258 INFO [main] c.n.e.c.PeerEurekaNodes [?:?] - Replica node URL:  http://root:root@localhost:8761/eureka/
+discovery 2019-05-23 09:28:49,265 INFO [main] c.n.e.r.AbstractInstanceRegistry [?:?] - Finished initializing remote region registries. All known remote regions: []
+discovery 2019-05-23 09:28:49,266 INFO [main] c.n.e.DefaultEurekaServerContext [?:?] - Initialized
+discovery 2019-05-23 09:28:49,299 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Registering beans for JMX exposure on startup
+discovery 2019-05-23 09:28:49,305 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Bean with name 'environmentManager' has been autodetected for JMX exposure
+discovery 2019-05-23 09:28:49,307 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Bean with name 'refreshScope' has been autodetected for JMX exposure
+discovery 2019-05-23 09:28:49,308 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+discovery 2019-05-23 09:28:49,311 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+discovery 2019-05-23 09:28:49,317 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+discovery 2019-05-23 09:28:49,324 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=46dffdc3,type=ConfigurationPropertiesRebinder]
+discovery 2019-05-23 09:28:49,331 INFO [main] o.s.c.s.DefaultLifecycleProcessor [?:?] - Starting beans in phase 0
+discovery 2019-05-23 09:28:49,335 INFO [main] o.s.c.n.e.s.EurekaServiceRegistry [?:?] - Registering application EUREKA-HA with eureka with status UP
+discovery 2019-05-23 09:28:49,337 INFO [Thread-23] o.s.c.n.e.s.EurekaServerBootstrap [?:?] - Setting the eureka configuration..
+discovery 2019-05-23 09:28:49,347 INFO [Thread-23] o.s.c.n.e.s.EurekaServerBootstrap [?:184] - isAws returned false
+discovery 2019-05-23 09:28:49,347 INFO [main] o.a.c.h.Http11NioProtocol [?:?] - Starting ProtocolHandler ["http-nio-8761"]
+discovery 2019-05-23 09:28:49,347 INFO [Thread-23] o.s.c.n.e.s.EurekaServerBootstrap [?:?] - Initialized server context
+discovery 2019-05-23 09:28:49,348 INFO [Thread-23] c.n.e.r.PeerAwareInstanceRegistryImpl [?:?] - Got 1 instances from neighboring DS node
+discovery 2019-05-23 09:28:49,348 INFO [Thread-23] c.n.e.r.PeerAwareInstanceRegistryImpl [?:?] - Renew threshold is: 1
+discovery 2019-05-23 09:28:49,348 INFO [Thread-23] c.n.e.r.PeerAwareInstanceRegistryImpl [?:?] - Changing status to UP
+discovery 2019-05-23 09:28:49,352 INFO [main] o.a.t.u.n.NioSelectorPool [?:?] - Using a shared selector for servlet write/read
+discovery 2019-05-23 09:28:49,355 INFO [Thread-23] o.s.c.n.e.s.EurekaServerInitializerConfiguration [?:?] - Started Eureka Server
+discovery 2019-05-23 09:28:49,362 INFO [main] o.s.b.w.e.t.TomcatWebServer [?:?] - Tomcat started on port(s): 8761 (http) with context path ''
+discovery 2019-05-23 09:28:49,363 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration [?:?] - Updating port to 8761
+discovery 2019-05-23 09:28:49,366 INFO [main] c.h.e.EurekaServerApplication [?:?] - Started EurekaServerApplication in 4.046 seconds (JVM running for 4.793)
+discovery 2019-05-23 09:28:49,646 INFO [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[.[.[/] [?:?] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+discovery 2019-05-23 09:28:49,646 INFO [RMI TCP Connection(4)-127.0.0.1] o.s.w.s.DispatcherServlet [?:?] - FrameworkServlet 'dispatcherServlet': initialization started
+discovery 2019-05-23 09:28:49,656 INFO [RMI TCP Connection(4)-127.0.0.1] o.s.w.s.DispatcherServlet [?:?] - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+discovery 2019-05-23 09:29:49,349 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:30:49,350 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:31:49,351 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:32:49,350 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:33:49,350 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:34:49,351 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:35:49,352 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:36:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:37:49,352 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:38:49,352 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:39:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:40:49,354 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:41:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:42:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:43:49,264 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl [?:?] - Current renewal threshold is : 0
+discovery 2019-05-23 09:43:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:44:49,353 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:45:49,354 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:46:49,354 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:47:49,354 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:48:49,355 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:49:49,355 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:50:49,355 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:51:49,355 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:52:49,356 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:53:49,357 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:54:49,358 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:55:49,358 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:56:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:57:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:58:49,264 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl [?:?] - Current renewal threshold is : 0
+discovery 2019-05-23 09:58:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 09:59:49,360 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:00:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:01:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:02:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:03:49,359 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:04:49,360 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:05:49,360 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:06:49,361 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:07:49,361 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:08:49,361 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:09:49,361 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:10:49,362 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:11:49,362 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:12:49,362 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:13:49,264 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl [PeerAwareInstanceRegistryImpl.java:541] - Current renewal threshold is : 0
+discovery 2019-05-23 10:13:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:14:49,362 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:15:49,362 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:16:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:17:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:18:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:19:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:20:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:21:49,363 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:22:49,364 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:23:49,364 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:24:49,364 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [AbstractInstanceRegistry.java:1247] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:25:49,364 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:26:49,365 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:27:49,365 INFO [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry [?:?] - Running the evict task with compensationTime 0ms
+discovery 2019-05-23 10:28:42,602 INFO [Thread-25] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [?:?] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46dffdc3: startup date [Thu May 23 09:28:46 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36916eb0
+discovery 2019-05-23 10:28:42,603 INFO [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry [?:?] - Unregistering application EUREKA-HA with eureka with status DOWN
+discovery 2019-05-23 10:28:42,605 INFO [Thread-25] o.s.c.s.DefaultLifecycleProcessor [?:?] - Stopping beans in phase 0
+discovery 2019-05-23 10:28:42,606 INFO [Thread-25] c.n.e.DefaultEurekaServerContext [?:?] - Shutting down ...
+discovery 2019-05-23 10:28:42,607 INFO [Thread-25] c.n.e.DefaultEurekaServerContext [?:?] - Shut down
+discovery 2019-05-23 10:28:42,610 INFO [Thread-25] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Unregistering JMX-exposed beans on shutdown
+discovery 2019-05-23 10:28:42,611 INFO [Thread-25] o.s.j.e.a.AnnotationMBeanExporter [?:185] - Unregistering JMX-exposed beans
+discovery 2019-05-23 10:28:42,614 INFO [Thread-25] c.n.d.DiscoveryClient [?:?] - Shutting down DiscoveryClient ...
+discovery 2019-05-23 10:28:42,614 INFO [Thread-25] c.n.d.DiscoveryClient [?:?] - Completed shut down of DiscoveryClient

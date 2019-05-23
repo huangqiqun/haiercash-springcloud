@@ -5,9 +5,9 @@ services:
     hostname: peer1
     container_name: peer1
     build: eureka-server/
-    image: microservice/eureka-server:latest
+    image: springcloud/eureka-server:latest
     networks:
-      - microservice-network
+      - springcloud-network
     ports:
       - 8761:8761
     environment:
@@ -16,9 +16,9 @@ services:
     hostname: peer2
     container_name: peer2
     build: eureka-server/
-    image: microservice/eureka-server:latest
+    image: springcloud/eureka-server:latest
     networks:
-      - microservice-network
+      - springcloud-network
     ports:
       - 8762:8762
     environment:
@@ -27,9 +27,9 @@ services:
     hostname: peer3
     container_name: peer3
     build: eureka-server/
-    image: microservice/eureka-server:latest
+    image: springcloud/eureka-server:latest
     networks:
-      - microservice-network
+      - springcloud-network
     ports:
       - 8763:8763
     environment:
@@ -40,23 +40,35 @@ services:
     hostname: config-server
     container_name: config-server
     build: config-server/
-    image: microservice/config-server:latest
+    image: springcloud/config-server:latest
     networks:
-      - microservice-network
+      - springcloud-network
     ports:
       - 8800:8800
     depends_on:
       - peer1
       - peer2
       - peer3
+  #控制平台
+  console:
+    hostname: console
+    container_name: console
+    build: console/
+    image: springcloud/console:latest
+    networks:
+      - springcloud-network
+    ports:
+      - 2222:2222
+    depends_on:
+      - config-server
   #微服务
   proivder:
     hostname: provider
     container_name: provider
     build: provider/
-    image: microservice/provider:latest
+    image: springcloud/provider:latest
     networks:
-      - microservice-network
+      - springcloud-network
       - apollo-network
     ports:
       - 8100:8100
@@ -70,9 +82,9 @@ services:
     hostname: consumer
     container_name: consumer
     build: consumer/
-    image: microservice/consumer:latest
+    image: springcloud/consumer:latest
     networks:
-      - microservice-network
+      - springcloud-network
       - apollo-network
     ports:
       - 8200:8200
@@ -88,9 +100,9 @@ services:
     hostname: gateway
     container_name: gateway
     build: gateway/
-    image: microservice/gateway:latest
+    image: springcloud/gateway:latest
     networks:
-      - microservice-network
+      - springcloud-network
       - apollo-network
     ports:
       - 8400:8400
@@ -106,9 +118,9 @@ services:
     hostname: dashboard
     container_name: dashboard
     build: dashboard/
-    image: microservice/dashboard:latest
+    image: springcloud/dashboard:latest
     networks:
-      - microservice-network
+      - springcloud-network
     ports:
       - 8900:8900
     depends_on:
@@ -124,9 +136,9 @@ services:
 #    hostname: trace
 #    container_name: trace
 #    build: trace/
-#    image: microservice/trace:latest
+#    image: springcloud/trace:latest
 #    networks:
-#      - microservice-network
+#      - springcloud-network
 #    ports:
 #      - 9411:9411
 #    depends_on:
@@ -139,7 +151,7 @@ services:
 #      - gateway
 
 networks:
-  microservice-network:
+  springcloud-network:
     external: true
   apollo-network:
     external: true

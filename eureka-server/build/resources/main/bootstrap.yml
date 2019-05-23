@@ -1,0 +1,81 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: eureka-ha
+
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: root
+      roles: SUPERUSER
+
+eureka:
+  datacenter: shanghai
+  environment: product
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 30
+  server:
+    enable-self-preservation: false
+    #eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    healthcheck:
+      enabled: true
+---
+server:
+  port: 8761
+
+spring:
+  profiles: dev
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://root:root@localhost:8761/eureka/
+---
+server:
+  port: 8761
+
+spring:
+  profiles: peer1
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
+---
+server:
+  port: 8762
+
+spring:
+  profiles: peer2
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer3:8763/eureka/
+---
+server:
+  port: 8763
+
+spring:
+  profiles: peer3
+
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/

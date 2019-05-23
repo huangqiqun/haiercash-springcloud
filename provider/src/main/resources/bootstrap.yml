@@ -36,6 +36,12 @@ eureka:
     service-url:
       defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
 
+# Apollo config for rule
+app：
+  id： discovery
+apollo：
+  meta： http://localhost:8080
+
 management:
   server:
     port: 5100

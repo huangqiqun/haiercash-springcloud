@@ -1,0 +1,20 @@
+archivesBaseName = 'admin'
+
+jar {
+    baseName = 'admin'
+    version = '0.0.1-SNAPSHOT'
+    manifest {
+        attributes "Manifest-Version": 1.0, 'Main-Class': 'com.haiercash.admin.AdminApplication'
+    }
+}
+
+mainClassName = 'com.haiercash.admin.AdminApplication'
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//    implementation 'de.codecentric:spring-boot-admin-starter-client'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'de.codecentric:spring-boot-admin-starter-server'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

@@ -1,0 +1,32 @@
+server:
+  port: 8800
+
+spring:
+  application:
+    name: config-server
+
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: root
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huangqiqun/springcloudconfig
+          search-paths: config-repo
+          username: huangqiqun@126.com
+          password: hqq19830919
+        label: master
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: config-server
+  client:
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/

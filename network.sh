@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker network create --subnet=172.11.0.0/16 microservice-network
+docker network create --subnet=172.11.0.0/16 springcloud-network
