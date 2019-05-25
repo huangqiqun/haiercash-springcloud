@@ -18,6 +18,23 @@ spring:
         service-id: config-server
       username: huangqiqun@126.com
       password: hqq19830919
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8075
+#      datasource:
+#        ds1:
+#          file:
+#            file: class:sentinel.json
+#            data: json
+#            rule-type: flow
+#      eager: true
+
+  boot:
+    admin:
+      client:
+        instance:
+          prefer-ip: true
+        url: http://localhost:5555
 
 eureka:
   instance:
@@ -27,7 +44,7 @@ eureka:
     # Eureka config for discovery
     metadata-map:
       version: 1.0
-      group: haiercash-service-group
+      group: example-service-group
       region: dev
 
   client:
@@ -35,12 +52,6 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
-
-# Apollo config for rule
-app：
-  id： discovery
-apollo：
-  meta： http://localhost:8080
 
 management:
   server:

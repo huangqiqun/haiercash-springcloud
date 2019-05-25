@@ -749,3 +749,26 @@ discovery 2019-05-23 16:55:53,051 INFO [main] c.h.c.ConsoleApplication [?:?] - S
 discovery 2019-05-23 16:56:33,040 INFO [http-nio-2222-exec-1] o.a.c.c.C.[.[.[/] [?:?] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 discovery 2019-05-23 16:56:33,040 INFO [http-nio-2222-exec-1] o.s.w.s.DispatcherServlet [?:?] - FrameworkServlet 'dispatcherServlet': initialization started
 discovery 2019-05-23 16:56:33,050 INFO [http-nio-2222-exec-1] o.s.w.s.DispatcherServlet [?:?] - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+discovery 2019-05-23 17:00:52,551 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:05:52,552 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:10:52,553 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:15:52,554 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:20:52,555 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:25:52,556 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:30:52,557 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:35:52,558 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:40:52,559 INFO [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver [?:?] - Resolving eureka endpoints via configuration
+discovery 2019-05-23 17:41:53,275 INFO [Thread-20] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [?:?] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a1a14a4: startup date [Thu May 23 16:55:49 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@11bd0f3b
+discovery 2019-05-23 17:41:53,276 INFO [Thread-20] o.s.c.n.e.s.EurekaServiceRegistry [?:?] - Unregistering application CONSOLE with eureka with status DOWN
+discovery 2019-05-23 17:41:53,276 WARN [Thread-20] c.n.d.DiscoveryClient [?:?] - Saw local status change event StatusChangeEvent [timestamp=1558604513276, current=DOWN, previous=UP]
+discovery 2019-05-23 17:41:53,276 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [?:?] - DiscoveryClient_CONSOLE/console:2222: registering service...
+discovery 2019-05-23 17:41:53,276 INFO [Thread-20] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1578b8ec: startup date [Thu May 23 16:55:52 CST 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a1a14a4
+discovery 2019-05-23 17:41:53,280 INFO [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient [?:?] - DiscoveryClient_CONSOLE/console:2222 - registration status: 204
+discovery 2019-05-23 17:41:53,291 INFO [Thread-20] o.s.c.s.DefaultLifecycleProcessor [?:?] - Stopping beans in phase 2147483647
+discovery 2019-05-23 17:41:53,292 INFO [Thread-20] o.s.c.s.DefaultLifecycleProcessor [?:?] - Stopping beans in phase 0
+discovery 2019-05-23 17:41:53,293 INFO [Thread-20] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Unregistering JMX-exposed beans on shutdown
+discovery 2019-05-23 17:41:53,293 INFO [Thread-20] o.s.j.e.a.AnnotationMBeanExporter [?:?] - Unregistering JMX-exposed beans
+discovery 2019-05-23 17:41:53,296 INFO [Thread-20] c.n.d.DiscoveryClient [?:?] - Shutting down DiscoveryClient ...
+discovery 2019-05-23 17:41:56,298 INFO [Thread-20] c.n.d.DiscoveryClient [?:?] - Unregistering ...
+discovery 2019-05-23 17:41:56,306 INFO [Thread-20] c.n.d.DiscoveryClient [?:?] - DiscoveryClient_CONSOLE/console:2222 - deregister  status: 200
+discovery 2019-05-23 17:41:56,331 INFO [Thread-20] c.n.d.DiscoveryClient [?:?] - Completed shut down of DiscoveryClient

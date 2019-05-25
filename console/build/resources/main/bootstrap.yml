@@ -23,6 +23,20 @@ eureka:
     service-url:
       defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
 
+# Apollo config for rule
+apollo:
+  portal-url: http://localhost:8088
+  token: b26d851c635fd51ae21981443d7aa75f14d99e4e
+  operator: apollo
+# apollo.connect-timeout=1000
+# apollo.read-timeout=5000
+  plugin:
+    app:
+      id: discovery
+    env: DEV
+# apollo.plugin.cluster=default
+# apollo.plugin.namespace=application
+
 # Admin config
 management:
   server:

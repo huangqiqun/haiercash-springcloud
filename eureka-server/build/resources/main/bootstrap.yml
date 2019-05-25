@@ -19,6 +19,8 @@ eureka:
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 30
     lease-renewal-interval-in-seconds: 30
+    metadataMap:
+      - group： example-eureka-group
   server:
     enable-self-preservation: false
     #eviction-interval-timer-in-ms: 5000

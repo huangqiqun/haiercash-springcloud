@@ -1,0 +1,47 @@
+version: '3'
+services:
+  #微服务
+  proivder:
+    hostname: provider
+    container_name: provider
+    build: provider/
+    image: springcloud/provider:latest
+    networks:
+      - springcloud-network
+      - apollo-network
+    ports:
+      - 8100:8100
+
+  consumer:
+    hostname: consumer
+    container_name: consumer
+    build: consumer/
+    image: springcloud/consumer:latest
+    networks:
+      - springcloud-network
+      - apollo-network
+    ports:
+      - 8200:8200
+    depends_on:
+      - provider
+
+  #网关
+  gateway:
+    hostname: gateway
+    container_name: gateway
+    build: gateway/
+    image: springcloud/gateway:latest
+    networks:
+      - springcloud-network
+      - apollo-network
+    ports:
+      - 8400:8400
+    depends_on:
+      - provider
+      - consumer
+
+networks:
+  springcloud-network:
+    external: true
+  apollo-network:
+    external: true

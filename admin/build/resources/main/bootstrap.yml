@@ -1,0 +1,24 @@
+# Spring cloud config
+server:
+  port: 5555
+
+spring:
+  application:
+    name: admin
+
+# Eureka config for discovery
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    appname: console
+    # Eureka config for discovery
+    metadata-map:
+      version: 1.0
+      group: haiercash-admin-group
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/

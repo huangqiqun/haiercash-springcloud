@@ -17,11 +17,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
     implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
+    implementation 'org.springframework.cloud:spring-cloud-alibaba-sentinel:0.2.1.RELEASE'
+//    implementation 'com.nepxion:discovery-plugin-starter-nacos'
     implementation 'com.nepxion:discovery-plugin-starter-eureka'
-    implementation 'com.nepxion:discovery-plugin-config-center-starter-apollo'
-    /*implementation 'com.nepxion:discovery-plugin-config-center-starter-nacos'*/
+//    implementation 'com.nepxion:discovery-plugin-config-center-starter-nacos'
     implementation 'com.nepxion:discovery-plugin-strategy-starter-service'
-    implementation 'com.ctrip.framework.apollo:apollo-client:1.3.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-alibaba-sentinel'
+    implementation 'de.codecentric:spring-boot-admin-starter-client'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
 }

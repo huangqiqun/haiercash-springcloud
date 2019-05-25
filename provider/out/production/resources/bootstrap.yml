@@ -18,6 +18,30 @@ spring:
         service-id: config-server
       username: huangqiqun@126.com
       password: hqq19830919
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8075
+#      datasource:
+#        ds1:
+#          file:
+#            file: class:sentinel.json
+#            data: json
+#            rule-type: flow
+#      eager: true
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        metadata:
+#          - group: example-service-group
+#          - version: 1.0
+#          - region: dev
+
+  boot:
+    admin:
+      client:
+        instance:
+          prefer-ip: true
+        url: http://localhost:5555
 
 eureka:
   instance:
@@ -27,7 +51,7 @@ eureka:
     # Eureka config for discovery
     metadata-map:
       version: 1.0
-      group: haiercash-service-group
+      group: example-service-group
       region: dev
 
   client:
@@ -35,6 +59,11 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: http://root:root@peer1:8761/eureka/,http://root:root@peer2:8762/eureka/,http://root:root@peer3:8763/eureka/
+
+# Nacos config for rule
+#nacos:
+#  server-addr: localhost:8848
+# nacos.plugin.namespace=application
 
 management:
   server:
